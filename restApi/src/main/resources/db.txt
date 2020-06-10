@@ -1,0 +1,11 @@
+CREATE DATABASE ionixtest;
+USE ionixtest;
+
+CREATE TABLE users (
+	user_id INT NOT NULL AUTO_INCREMENT,
+  	name VARCHAR(60),
+  	username VARCHAR(20) NOT NULL,
+  	email VARCHAR(320) NOT NULL,
+  	phone BIGINT UNSIGNED,
+  	CONSTRAINT users_pk PRIMARY KEY (user_id) 
+);
